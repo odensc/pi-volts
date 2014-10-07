@@ -2,8 +2,8 @@ var spawn = require("child_process").spawn;
 
 module.exports.measure = function(callback)
 {
-	var regex = /temp=([^'C]+)/;
-	var cmd = spawn("/opt/vc/bin/vcgencmd", ["measure_temp"]);
+	var regex = /volt=([^V]+)/;
+	var cmd = spawn("/opt/vc/bin/vcgencmd", ["measure_volts"]);
 	cmd.stdout.on("data", function(buf)
 	{
 		callback(Number(regex.exec(buf.toString("utf8"))[1]))

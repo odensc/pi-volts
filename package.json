@@ -1,26 +1,26 @@
 {
-  "name": "pi-temperature",
+  "name": "pi-volts",
   "version": "1.0.0",
-  "description": "Measure the tempature on a Raspberry Pi",
+  "description": "Measure volts on a Raspberry Pi",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/thesbros/pi-temperature.git"
+    "url": "https://github.com/thesbros/pi-volts.git"
   },
   "keywords": [
     "raspberry",
     "pi",
     "raspberrypi",
-    "temp",
-    "temperature"
+    "volt",
+    "volts"
   ],
   "author": "thesbros <oden@thesbros.me>",
   "license": "Apache 2.0",
   "bugs": {
-    "url": "https://github.com/thesbros/pi-temperature/issues"
+    "url": "https://github.com/thesbros/pi-volts/issues"
   },
-  "homepage": "https://github.com/thesbros/pi-temperature"
+  "homepage": "https://github.com/thesbros/pi-volts"
 }
