@@ -1,0 +1,107 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/thesbros/.nodebrew/current/bin/node',
+1 verbose cli   '/Users/thesbros/.nodebrew/current/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@2.0.0
+3 info using node@v0.11.14
+4 verbose node symlink /Users/thesbros/.nodebrew/current/bin/node
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add spec="." args=[".",null]
+8 verbose parsed spec { raw: '.',
+8 verbose parsed spec   scope: null,
+8 verbose parsed spec   name: null,
+8 verbose parsed spec   rawSpec: '.',
+8 verbose parsed spec   spec: '/Users/thesbros/Desktop/Development/Web/Workspace/pi-volts',
+8 verbose parsed spec   type: 'local' }
+9 verbose cache add local package /Users/thesbros/Desktop/Development/Web/Workspace/pi-volts
+10 silly lockFile 3a52ce78- .
+11 verbose lock . /Users/thesbros/.npm/3a52ce78-.lock
+12 verbose tar pack [ '/Users/thesbros/.npm/pi-volts/1.0.0/package.tgz', '.' ]
+13 verbose tarball /Users/thesbros/.npm/pi-volts/1.0.0/package.tgz
+14 verbose folder .
+15 info prepublish pi-volts@1.0.0
+16 silly lockFile 1f1177db-tar tar://.
+17 verbose lock tar://. /Users/thesbros/.npm/1f1177db-tar.lock
+18 silly lockFile da4a34c9-s-npm-pi-volts-1-0-0-package-tgz tar:///Users/thesbros/.npm/pi-volts/1.0.0/package.tgz
+19 verbose lock tar:///Users/thesbros/.npm/pi-volts/1.0.0/package.tgz /Users/thesbros/.npm/da4a34c9-s-npm-pi-volts-1-0-0-package-tgz.lock
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile 1f1177db-tar tar://.
+22 silly lockFile da4a34c9-s-npm-pi-volts-1-0-0-package-tgz tar:///Users/thesbros/.npm/pi-volts/1.0.0/package.tgz
+23 silly lockFile da4a34c9-s-npm-pi-volts-1-0-0-package-tgz tar:///Users/thesbros/.npm/pi-volts/1.0.0/package.tgz
+24 silly lockFile 1988dd14-sbros-npm-pi-volts-1-0-0-package /Users/thesbros/.npm/pi-volts/1.0.0/package
+25 verbose lock /Users/thesbros/.npm/pi-volts/1.0.0/package /Users/thesbros/.npm/1988dd14-sbros-npm-pi-volts-1-0-0-package.lock
+26 silly lockFile 1988dd14-sbros-npm-pi-volts-1-0-0-package /Users/thesbros/.npm/pi-volts/1.0.0/package
+27 silly lockFile 1988dd14-sbros-npm-pi-volts-1-0-0-package /Users/thesbros/.npm/pi-volts/1.0.0/package
+28 silly lockFile 3a52ce78- .
+29 silly lockFile 3a52ce78- .
+30 silly publish { name: 'pi-volts',
+30 silly publish   version: '1.0.0',
+30 silly publish   description: 'Measure volts on a Raspberry Pi',
+30 silly publish   main: 'index.js',
+30 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+30 silly publish   repository: { type: 'git', url: 'https://github.com/thesbros/pi-volts.git' },
+30 silly publish   keywords: [ 'raspberry', 'pi', 'raspberrypi', 'volt', 'volts' ],
+30 silly publish   author: { name: 'thesbros', email: 'oden@thesbros.me' },
+30 silly publish   license: 'Apache 2.0',
+30 silly publish   bugs: { url: 'https://github.com/thesbros/pi-volts/issues' },
+30 silly publish   homepage: 'https://github.com/thesbros/pi-volts',
+30 silly publish   readme: 'pi-volts\n==============\n\nMeasure the volts on a Raspberry Pi - Node.js module\n\n## Usage\nThe API is very easy, just do something like this:\n```\nvar volt = require("pi-volts");\nvolt.measure(function(volts)\n{\n\tconsole.log("core volts: " + volts);\n});\nvolt.measure(function(volts)\n{\n\tconsole.log("sdram p volts: " + volts);\n}, {id: "sdram_p"});\n```\n\n## API\n### volts.measure(function callback(volts, err) [, options])\nMeasures the volts and calls the callback with the parameters volts and error (if any.)\n\noptions takes an object with the property "id", which can be one of "core", "sdram_c", "sdram_i" or "sdram_p" (defaults to core.)\n',
+30 silly publish   readmeFilename: 'README.md',
+30 silly publish   gitHead: '8795ef872c72f9432452f0e55cfb5bd9241724e3',
+30 silly publish   _id: 'pi-volts@1.0.0',
+30 silly publish   _shasum: '8705876bd2189c2eaf3b1035413431cb12d8e95a',
+30 silly publish   _from: '.' }
+31 verbose mapToRegistry name pi-volts
+32 verbose mapToRegistry uri https://registry.npmjs.org/pi-volts
+33 verbose publish registryBase https://registry.npmjs.org/
+34 verbose request on initialization, where is /pi-volts
+35 verbose request after pass 1, where is /pi-volts
+36 verbose request url raw /pi-volts
+37 verbose request resolving registry [ 'https://registry.npmjs.org/', './pi-volts' ]
+38 verbose request after pass 2, where is https://registry.npmjs.org/pi-volts
+39 verbose request sending authorization for write operation
+40 info attempt registry request try #1 at 01:24:59
+41 verbose request id 3fafd8972da42746
+42 http request PUT https://registry.npmjs.org/pi-volts
+43 http 403 https://registry.npmjs.org/pi-volts
+44 verbose headers { date: 'Tue, 07 Oct 2014 08:24:59 GMT',
+44 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+44 verbose headers   'content-type': 'application/json',
+44 verbose headers   'cache-control': 'max-age=60',
+44 verbose headers   'content-length': '3037',
+44 verbose headers   'accept-ranges': 'bytes',
+44 verbose headers   via: '1.1 varnish',
+44 verbose headers   'x-served-by': 'cache-lax1420-LAX',
+44 verbose headers   'x-cache': 'MISS',
+44 verbose headers   'x-cache-hits': '0',
+44 verbose headers   'x-timer': 'S1412670299.856640,VS0,VE74',
+44 verbose headers   connection: 'close' }
+45 error publish Failed PUT 403
+46 verbose stack Error: forbidden cannot modify pre-existing version: 1.0.0
+46 verbose stack old={"name":"pi-volts","version":"1.0.0","description":"Measure volts on a Raspberry Pi","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"https://github.com/thesbros/pi-volts.git"},"keywords":["raspberry","pi","raspberrypi","volt","volts"],"author":{"name":"thesbros","email":"oden@thesbros.me"},"license":"Apache 2.0","bugs":{"url":"https://github.com/thesbros/pi-volts/issues"},"homepage":"https://github.com/thesbros/pi-volts","gitHead":"7c3aab9d0ceab1aef1bb910f3708084f1735faf3","_id":"pi-volts@1.0.0","_shasum":"d01f370056cf96beb84732059fdb7cf92c4dfc28","_from":".","_npmVersion":"2.0.0","_npmUser":{"name":"thesbros","email":"oden@thesbros.me"},"maintainers":[{"name":"thesbros","email":"oden@thesbros.me"}],"dist":{"shasum":"d01f370056cf96beb84732059fdb7cf92c4dfc28","tarball":"http://registry.npmjs.org/pi-volts/-/pi-volts-1.0.0.tgz"}}
+46 verbose stack new={"name":"pi-volts","version":"1.0.0","description":"Measure volts on a Raspberry Pi","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"https://github.com/thesbros/pi-volts.git"},"keywords":["raspberry","pi","raspberrypi","volt","volts"],"author":{"name":"thesbros","email":"oden@thesbros.me"},"license":"Apache 2.0","bugs":{"url":"https://github.com/thesbros/pi-volts/issues"},"homepage":"https://github.com/thesbros/pi-volts","readme":"pi-volts\u000a==============\u000a\u000aMeasure the volts on a Raspberry Pi - Node.js module\u000a\u000a## Usage\u000aThe API is very easy, just do something like this:\u000a```\u000avar volt = require(\"pi-volts\");\u000avolt.measure(function(volts)\u000a{\u000a\u0009console.log(\"core volts: \" + volts);\u000a});\u000avolt.measure(function(volts)\u000a{\u000a\u0009console.log(\"sdram p volts: \" + volts);\u000a}, {id: \"sdram_p\"});\u000a```\u000a\u000a## API\u000a### volts.measure(function callback(volts, err) [, options])\u000aMeasures the volts and calls the callback with the parameters volts and error (if any.)\u000a\u000aoptions takes an object with the property \"id\", which can be one of \"core\", \"sdram_c\", \"sdram_i\" or \"sdram_p\" (defaults to core.)\u000a","readmeFilename":"README.md","gitHead":"8795ef872c72f9432452f0e55cfb5bd9241724e3","_id":"pi-volts@1.0.0","_shasum":"8705876bd2189c2eaf3b1035413431cb12d8e95a","_from":".","_npmVersion":"2.0.0","_npmUser":{"name":"thesbros","email":"oden@thesbros.me"},"maintainers":[{"name":"thesbros","email":"oden@thesbros.me"}],"dist":{"shasum":"8705876bd2189c2eaf3b1035413431cb12d8e95a","tarball":"http://registry.npmjs.org/pi-volts/-/pi-volts-1.0.0.tgz"}}: pi-volts
+46 verbose stack     at RegClient.<anonymous> (/Users/thesbros/.nodebrew/node/v0.11.14/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:261:14)
+46 verbose stack     at Request._callback (/Users/thesbros/.nodebrew/node/v0.11.14/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:198:65)
+46 verbose stack     at Request.self.callback (/Users/thesbros/.nodebrew/node/v0.11.14/lib/node_modules/npm/node_modules/request/request.js:236:22)
+46 verbose stack     at Request.emit (events.js:110:17)
+46 verbose stack     at Request.<anonymous> (/Users/thesbros/.nodebrew/node/v0.11.14/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+46 verbose stack     at Request.emit (events.js:129:20)
+46 verbose stack     at IncomingMessage.<anonymous> (/Users/thesbros/.nodebrew/node/v0.11.14/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+46 verbose stack     at IncomingMessage.emit (events.js:129:20)
+46 verbose stack     at _stream_readable.js:907:16
+46 verbose stack     at process._tickCallback (node.js:372:11)
+47 verbose statusCode 403
+48 verbose pkgid pi-volts
+49 verbose cwd /Users/thesbros/Desktop/Development/Web/Workspace/pi-volts
+50 error Darwin 14.0.0
+51 error argv "/Users/thesbros/.nodebrew/current/bin/node" "/Users/thesbros/.nodebrew/current/bin/npm" "publish"
+52 error node v0.11.14
+53 error npm  v2.0.0
+54 error code E403
+55 error forbidden cannot modify pre-existing version: 1.0.0
+55 error old={"name":"pi-volts","version":"1.0.0","description":"Measure volts on a Raspberry Pi","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"https://github.com/thesbros/pi-volts.git"},"keywords":["raspberry","pi","raspberrypi","volt","volts"],"author":{"name":"thesbros","email":"oden@thesbros.me"},"license":"Apache 2.0","bugs":{"url":"https://github.com/thesbros/pi-volts/issues"},"homepage":"https://github.com/thesbros/pi-volts","gitHead":"7c3aab9d0ceab1aef1bb910f3708084f1735faf3","_id":"pi-volts@1.0.0","_shasum":"d01f370056cf96beb84732059fdb7cf92c4dfc28","_from":".","_npmVersion":"2.0.0","_npmUser":{"name":"thesbros","email":"oden@thesbros.me"},"maintainers":[{"name":"thesbros","email":"oden@thesbros.me"}],"dist":{"shasum":"d01f370056cf96beb84732059fdb7cf92c4dfc28","tarball":"http://registry.npmjs.org/pi-volts/-/pi-volts-1.0.0.tgz"}}
+55 error new={"name":"pi-volts","version":"1.0.0","description":"Measure volts on a Raspberry Pi","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"https://github.com/thesbros/pi-volts.git"},"keywords":["raspberry","pi","raspberrypi","volt","volts"],"author":{"name":"thesbros","email":"oden@thesbros.me"},"license":"Apache 2.0","bugs":{"url":"https://github.com/thesbros/pi-volts/issues"},"homepage":"https://github.com/thesbros/pi-volts","readme":"pi-volts\u000a==============\u000a\u000aMeasure the volts on a Raspberry Pi - Node.js module\u000a\u000a## Usage\u000aThe API is very easy, just do something like this:\u000a```\u000avar volt = require(\"pi-volts\");\u000avolt.measure(function(volts)\u000a{\u000a\u0009console.log(\"core volts: \" + volts);\u000a});\u000avolt.measure(function(volts)\u000a{\u000a\u0009console.log(\"sdram p volts: \" + volts);\u000a}, {id: \"sdram_p\"});\u000a```\u000a\u000a## API\u000a### volts.measure(function callback(volts, err) [, options])\u000aMeasures the volts and calls the callback with the parameters volts and error (if any.)\u000a\u000aoptions takes an object with the property \"id\", which can be one of \"core\", \"sdram_c\", \"sdram_i\" or \"sdram_p\" (defaults to core.)\u000a","readmeFilename":"README.md","gitHead":"8795ef872c72f9432452f0e55cfb5bd9241724e3","_id":"pi-volts@1.0.0","_shasum":"8705876bd2189c2eaf3b1035413431cb12d8e95a","_from":".","_npmVersion":"2.0.0","_npmUser":{"name":"thesbros","email":"oden@thesbros.me"},"maintainers":[{"name":"thesbros","email":"oden@thesbros.me"}],"dist":{"shasum":"8705876bd2189c2eaf3b1035413431cb12d8e95a","tarball":"http://registry.npmjs.org/pi-volts/-/pi-volts-1.0.0.tgz"}}: pi-volts
+56 error If you need help, you may report this error at:
+56 error     <http://github.com/npm/npm/issues>
+57 verbose exit [ 1, true ]
