@@ -1,6 +1,6 @@
 {
   "name": "pi-volts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Measure volts on a Raspberry Pi",
   "main": "index.js",
   "scripts": {
